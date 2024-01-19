@@ -26,19 +26,28 @@ export default {
       <div>
         <ul class="display-flex-main-section-2">
           <li>
-            IMG + DIGITAL COMICS
+            <img src="/img/buy-comics-digital-comics.png" alt="">
+            <span>DIGITAL COMIC</span>
           </li>
+         
           <li>
-            IMG + DC MERCHANDISE
+            <img src="/img/buy-comics-merchandise.png" alt="">
+            <span>DIGITAL COMIC</span>
           </li>
+ 
           <li>
-            IMG + SUBSCRIPTION
+            <img src="/img/buy-comics-subscriptions.png" alt="">
+            <span>DIGITAL COMIC</span>
           </li>
+          
           <li>
-            IMG + COMIC SHOP LOCATOR
+            <img src="/img/buy-comics-shop-locator.png" alt="">
+            <span>DIGITAL COMIC</span>
           </li>
+          
           <li>
-            IMG + DC POWER VISA
+            <img src="/img/buy-dc-power-visa.svg" alt="">
+            <span>DIGITAL COMIC</span>
           </li>
         </ul>
       </div>
@@ -52,40 +61,40 @@ export default {
           <h3>DC COMICS</h3>
             <ul>
               <li>
-                ELEMENTO 1
+                Characters
               </li>
               <li>
-                ELEMENTO 1
+                Comics
               </li>
               <li>
-                ELEMENTO 1
+                Movies
               </li>
               <li>
-                ELEMENTO 1
+                TV
               </li>
               <li>
-                ELEMENTO 1
+                Games
               </li>
               <li>
-                ELEMENTO 1
+                Videos
               </li>
               <li>
-                ELEMENTO 1
+                News
               </li>
             </ul>
-          <div class="shop">
+          
             <h3>
               SHOP
             </h3>
             <ul>
               <li>
-                ELEMENTO 1
+                Shop DC
               </li>
               <li>
-                ELEMENTO 1
+                Shop DC Collectibles
               </li>
             </ul>
-          </div>
+          
         </div>
 
 
@@ -93,37 +102,34 @@ export default {
           <h3>DC</h3>
           <ul>
             <li>
-              ELEMENTO 1
+              Terms Of Use
             </li>
             <li>
-              ELEMENTO 1
+              Privacy Policy
             </li>
             <li>
-              ELEMENTO 1
+              Ad Choices
             </li>
             <li>
-              ELEMENTO 1
+              Advertising
             </li>
             <li>
-              ELEMENTO 1
+              Jobs
             </li>
             <li>
-              ELEMENTO 1
+              Subscription
             </li>
             <li>
-              ELEMENTO 1
+              Talent Workshop
             </li>
             <li>
-              ELEMENTO 1
+              Raitings
             </li>
             <li>
-              ELEMENTO 1
+              Shop Help
             </li>
             <li>
-              ELEMENTO 1
-            </li>
-            <li>
-              ELEMENTO 1
+              Contact Us
             </li>
           </ul>
         </div>
@@ -132,16 +138,16 @@ export default {
           <h3>SITES</h3>
           <ul>
             <li>
-              ELEMENTO 1
+              DC
             </li>
             <li>
-              ELEMENTO 1
+              Mad Magazine
             </li>
             <li>
-              ELEMENTO 1
+              DC Kids
             </li>
             <li>
-              ELEMENTO 1
+              DC Universe
             </li>
           </ul>
         </div>

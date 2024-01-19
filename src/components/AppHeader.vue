@@ -17,7 +17,9 @@ export default {
     <div>
       <div id="container-header">
         <div class="display-flex-header">
-          FOTO
+          <div>
+            <img src="/img/dc-logo.png" alt="">
+          </div>
           <div>
             <ul class="display-flex-header">
             <li>

@@ -21,6 +21,10 @@ header{
                 padding: 13px;
                 list-style: none;
 
+                & img{
+                    width: 50%;
+                }
+
                 &> li{
                     margin-left: 10px;
             }

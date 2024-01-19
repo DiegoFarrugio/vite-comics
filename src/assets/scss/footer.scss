@@ -1,0 +1,7 @@
+@use './partials/mixing.scss' as *;
+@use './partials/variables.scss' as *;
+
+.big-container{
+    max-width: 1100px;
+    margin: auto;
+}

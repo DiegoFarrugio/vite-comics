@@ -2,7 +2,73 @@
 export default {
   data(){
     return{
-        
+        options: [
+        {
+          img : "/img/buy-comics-digital-comics.png",
+          text : 'DIGITAL COMIC'
+        },
+
+        {
+          img : "/img/buy-comics-merchandise.png",
+          text : 'DIGITAL COMIC'
+        },
+
+        {
+          img : "/img/buy-comics-subscriptions.png",
+          text : 'DIGITAL COMIC'
+        },
+
+        {
+          img : "/img/buy-comics-shop-locator.png",
+          text : 'DIGITAL COMIC'
+        },
+
+        {
+          img : "/img/buy-dc-power-visa.svg",
+          text : 'DIGITAL COMIC'
+        },
+
+        ],
+
+        dcComics: [
+          'Characters',
+          'Comics',
+          'Movies',
+          'TV',
+          'Games',
+          'Collectibles',
+          'Videos',
+          'Fans',
+          'New',
+          'Shop'
+        ],
+
+        shop: [
+          'Shop DC',
+          'Shop DC Collectibles', 
+        ],
+
+        dc: [
+          'Terms Of Use',
+          'Privacy Policy',
+          'Ad Choices',
+          'Advertising',
+          'Jobs',
+          'Subscription',
+          'Talent Workshop',
+          'CPSC Certificates',
+          'Raitings',
+          'Shop Help',
+          'Contact Us',
+        ],
+
+        site: [
+          'DC',
+          'MAD Magazine',
+          'DC Kids',
+          'DC Universe',
+          'DC Power Visa'
+        ],
     }
   },
 
@@ -25,29 +91,9 @@ export default {
     <div id="main-section-2">
       <div>
         <ul class="display-flex-main-section-2">
-          <li>
-            <img src="/img/buy-comics-digital-comics.png" alt="">
-            <span>DIGITAL COMIC</span>
-          </li>
-         
-          <li>
-            <img src="/img/buy-comics-merchandise.png" alt="">
-            <span>DIGITAL COMIC</span>
-          </li>
- 
-          <li>
-            <img src="/img/buy-comics-subscriptions.png" alt="">
-            <span>DIGITAL COMIC</span>
-          </li>
-          
-          <li>
-            <img src="/img/buy-comics-shop-locator.png" alt="">
-            <span>DIGITAL COMIC</span>
-          </li>
-          
-          <li>
-            <img src="/img/buy-dc-power-visa.svg" alt="">
-            <span>DIGITAL COMIC</span>
+          <li v-for="(option, i) in options" :key="i">
+            <img :src="option.img" alt="">
+            <span> {{option.text}} </span>
           </li>
         </ul>
       </div>
@@ -60,96 +106,42 @@ export default {
         <div class="list-1">
           <h3>DC COMICS</h3>
             <ul>
-              <li>
-                Characters
-              </li>
-              <li>
-                Comics
-              </li>
-              <li>
-                Movies
-              </li>
-              <li>
-                TV
-              </li>
-              <li>
-                Games
-              </li>
-              <li>
-                Videos
-              </li>
-              <li>
-                News
+              <li v-for="(choice, i) in dcComics" :key="i">
+                {{ choice }}
               </li>
             </ul>
           
-            <h3>
-              SHOP
-            </h3>
+          <h3>
+            SHOP
+          </h3>
             <ul>
-              <li>
-                Shop DC
-              </li>
-              <li>
-                Shop DC Collectibles
+              <li v-for="(shops, i) in shop">
+                {{ shops }}
               </li>
             </ul>
-          
         </div>
 
 
         <div class="list-2">
-          <h3>DC</h3>
-          <ul>
-            <li>
-              Terms Of Use
-            </li>
-            <li>
-              Privacy Policy
-            </li>
-            <li>
-              Ad Choices
-            </li>
-            <li>
-              Advertising
-            </li>
-            <li>
-              Jobs
-            </li>
-            <li>
-              Subscription
-            </li>
-            <li>
-              Talent Workshop
-            </li>
-            <li>
-              Raitings
-            </li>
-            <li>
-              Shop Help
-            </li>
-            <li>
-              Contact Us
-            </li>
-          </ul>
+          <h3>
+            DC
+          </h3>
+            <ul>
+              <li v-for="(dcs, i) in dc" :key="i">
+                {{ dcs }}
+              </li>
+            </ul>
         </div>
 
         <div class="list-3">
-          <h3>SITES</h3>
-          <ul>
-            <li>
-              DC
-            </li>
-            <li>
-              Mad Magazine
-            </li>
-            <li>
-              DC Kids
-            </li>
-            <li>
-              DC Universe
-            </li>
-          </ul>
+          <h3>
+            SITES
+          </h3>
+            <ul>
+              <li v-for="(sites, i) in site" :key="i">
+                {{ sites }}
+              </li>
+            </ul>
         </div>
       </div>
 

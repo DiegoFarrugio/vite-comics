@@ -2,7 +2,13 @@
 export default {
   data(){
     return{
-
+        logoImg : [
+        "/img/footer-facebook.png",
+        "/img/footer-twitter.png",
+        "/img/footer-pinterest.png",
+        "/img/footer-youtube.png",
+        "/img/footer-periscope.png"
+        ]
     }
   },
 
@@ -13,9 +19,21 @@ export default {
 
 
 <template>
-  <div class="container-footer">
+  <footer>
+    <div class="display-flex-footer">
+      <div class="button-sing-up">
+        <strong>SIGN-UP NOW!</strong>
+      </div>
 
-  </div>
+      <div class="display-flex-loghi-footer">
+        <span><strong>FOLLOW US</strong></span>
+        <div v-for="(logoImages, i) in logoImg" :key="i">
+          <img :src="logoImages" alt="">
+        </div>
+      </div>
+
+    </div>
+  </footer>
 </template>
 
 

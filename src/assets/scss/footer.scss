@@ -1,7 +1,41 @@
 @use './partials/mixing.scss' as *;
 @use './partials/variables.scss' as *;
 
-.big-container{
+footer{
     max-width: 1100px;
     margin: auto;
+    background-color: rgb(48, 48, 48);
+
+
+    .display-flex-footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .button-sing-up{
+        color: white;
+        border: 2px solid rgb(2, 130, 250);
+        padding: 10px;
+        font-size: 18px;
+
+    }
+
+    span{
+        color: rgb(2, 130, 250);
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .display-flex-loghi-footer{
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-right: 15px;
+        }
+    }
 }
+

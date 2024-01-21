@@ -1,4 +1,6 @@
 <script>
+import SingleSeries from './SingleSeries.vue'
+
 export default {
   data(){
     return{
@@ -147,6 +149,10 @@ export default {
     }
   },
 
+  components: {
+        SingleSeries
+    },
+
   methods: {}
 }
 </script>
@@ -164,12 +170,16 @@ export default {
 
   <section id="main-section-2">
     <div v-for="(singleSeries, i) in series" :key="i" class="series_container single_series">
+
+      <div class="single_series">
         <div>
             <img :src="singleSeries.thumb" alt="series.series">
         </div>
         <div>
             {{ singleSeries.series }}
         </div>
+      </div>
+      
     </div>
 
     <div class="load-more-link">

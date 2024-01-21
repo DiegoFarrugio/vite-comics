@@ -49,6 +49,7 @@
         height: calc((1100px / 6) - 20px);
         display: block;
         margin-bottom: 10px;
+        object-fit: cover;
     }
 
 }
@@ -63,6 +64,7 @@
 
         a{
             color: white;
+            text-decoration: none;
         }
 
     }
